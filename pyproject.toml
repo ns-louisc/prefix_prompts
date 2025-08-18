@@ -1,0 +1,10 @@
+[project]
+name = "prefix-prompts"
+version = "0.1.0"
+description = "A Python tool for adding manipulation fields to CSV files containing prompts. This project processes existing CSV files by adding two new fields: `manipulation_id` and `probe`."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.0.0",
+    "jupyter>=1.0.0"
+]
