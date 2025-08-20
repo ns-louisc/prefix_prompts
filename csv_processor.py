@@ -29,7 +29,7 @@ class CSVProcessor:
         print(f"Output saved to: {self.output_file}")
 
     def _read_csv(self) -> pd.DataFrame:
-        df = pd.read_csv(self.input_file, dtype=object)
+        df = pd.read_csv(self.input_file, dtype=object, na_filter=False)
 
         if "prompt" not in df.columns:
             raise ValueError("Input CSV must contain a 'prompt' column")
